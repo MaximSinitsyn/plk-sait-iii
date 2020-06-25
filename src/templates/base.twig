@@ -1,0 +1,40 @@
+{% include "components/header_scroll.twig" %}
+
+<div class="block" id="home">
+    {% include "components/offer.twig" %}
+</div>
+<div class="block" id="{{ advantages.anchor }}">
+    {% include "modules/advantages.twig" with {"__scope":advantages} %}
+</div>
+{# <div class="block" id="{{ warranty.anchor }}">
+    {% include "modules/warranty.twig" with {"__scope":warranty} %}
+</div> #}
+<div class="block">
+    {% include "components/sale.twig" %}
+</div>
+<div class="block" id="{{ license.anchor }}">
+    {% include "modules/license.twig" with {"__scope":license} %}
+</div>
+<div class="block" id="{{ learning.anchor }}">
+    {% include "modules/learning.twig" with {"__scope":learning} %}
+</div>
+
+<div class="block" id="{{ order.anchor }}">
+    {% include "modules/order.twig" with {"__scope":order} %}
+</div>
+
+<div class="block" id="whatyouhave">
+    {% include "modules/whatyouhave.twig" with {"__scope":whatyouhave} %}
+</div>
+
+{# <div class="block" id="clients">
+    {% include "modules/clients.twig" with {"__scope":clients} %}
+</div> #}
+<div class="block" id="reception">
+    {% include "modules/form-block.twig" with {"__scope":form_block} %}
+</div>
+<div class="block block_shadow" id="contacts">
+    {% include "modules/contact.twig" with {"__scope":contact} %}
+</div>
+
+{% include "components/footer.twig" %}

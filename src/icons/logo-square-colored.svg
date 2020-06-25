@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="42px" height="42px" viewBox="52.508 52.495 42 42" enable-background="new 52.508 52.495 42 42" xml:space="preserve">
+<path id="Рамка_1_" fill="#010101" d="M91.993,55.01v36.97H55.023V55.01H91.993 M94.508,52.495h-2.515H55.023h-2.515v2.515
+	v36.97v2.515h2.515h36.971h2.515V91.98V55.01L94.508,52.495L94.508,52.495z"/>
+<linearGradient id="Символ_2_" gradientUnits="userSpaceOnUse" x1="680.7537" y1="539.7926" x2="660.4639" y2="504.6497" gradientTransform="matrix(1 0 0 1 -598.22 -448.08)">
+	<stop  offset="0" style="stop-color:#1D76BB"/>
+	<stop  offset="1" style="stop-color:#28A8E0"/>
+</linearGradient>
+<path id="Символ_1_" fill="url(#Символ_2_)" d="M75.091,88.348h13.271v-3.632H74.87H62.286v-5.823h-3.632v9.455H75.091z
+	 M76.143,83.242h12.219V79.61H76.171h-5.362c-1.889,0-3.425-1.537-3.425-3.426c0-1.889,1.537-3.426,3.425-3.426v-3.632h-0.124v0.001
+	c-3.834,0.066-6.933,3.206-6.933,7.057c0,3.892,3.166,7.058,7.057,7.058C70.809,83.242,76.143,83.242,76.143,83.242z M81.305,69.126
+	c1.889,0,3.425-1.537,3.425-3.426c0-1.889-1.537-3.426-3.425-3.426h-1.875H62.286v14.557h-3.632v-18.19h20.693h1.958
+	c3.891,0,7.057,3.166,7.057,7.058s-3.166,7.058-7.057,7.058l-8.443,0.001l-0.001-3.633L81.305,69.126"/>
+</svg>

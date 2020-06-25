@@ -1,0 +1,35 @@
+
+/// Базовая величина тени
+$shadow-s: 3px;
+
+/// Базовые размеры приложения, используется для построения отступов
+$size: 21px;
+
+$size_s: 9px;
+$size_m: 18px;
+$size_l: 36px;
+$size_h: 54px;
+$size_g: 72px;
+
+$offset_s: 21px;
+$offset_m: 42px;
+$offset_l: 63px;
+$offset_h: 84px;
+
+/// Время анимации
+$speed: 300ms;
+
+/// Задержка анимации
+$delay: 0s;
+
+$breakpoints: (
+    xs: 'max-width: 420px',
+    sm: 'min-width: 421px',
+    md: 'min-width: 781px',
+    lg: 'min-width: 961px',
+    hg: 'min-width: 1201px',
+);
+
+$max-width: 1240px;
+
+$_base_path: '../images/';

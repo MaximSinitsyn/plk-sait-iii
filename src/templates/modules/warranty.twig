@@ -1,0 +1,23 @@
+<div class="row warranty">
+    <div class="col xs-12">
+        <div class=" warranty__title">
+            {{ __scope.title | raw }}
+        </div>
+    </div>
+    <div class="row">
+        {% for item in __scope.items %} 
+            <div class="col xs-12 md-6 lg-4 warranty__item">
+                <div class="white-block">
+                    <div class="sale-trigger">
+                        <div class="sale-trigger__title">
+                            {{ item.title | raw }}
+                        </div>
+                        <div class="sale-trigger__text">
+                            {{ item.description | raw }}
+                        </div>  
+                    </div>
+                </div>    
+            </div>
+        {% endfor %}
+    </div> 
+</div>

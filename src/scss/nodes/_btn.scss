@@ -1,0 +1,102 @@
+/// @example html - Простой пример, без использования иконок.
+///
+/// <button class='btn'>Button</button>
+///
+/// @example html - Модификатор размера кнопки может быть двух видов - '_small' и '_big'.
+/// 				По умолчанию 'medium'
+///
+/// <button class='btn btn_big'>Button</button>
+///
+/// @example html - Модификатор для изменения вида кнопки на прозрачную с обводкой - '_solid'
+///
+/// <button class='btn btn_solid'>Button</button>
+
+.btn {
+	font-size: $font_m;
+    color: $black;
+    background: $positive;
+    box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: $size #{$size / 2 + $size};
+    line-height: $size;
+    transition: 300ms 0ms linear;
+    cursor: pointer;
+
+	@include media-query(md) {
+		font-size: $font_s;
+		line-height: $size;
+	}
+
+	&:hover {
+		box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3), inset 0 0 40px 0 rgba(255, 255, 255, 0.6);
+	}
+
+	&:active {
+		background: mix(black, $positive, 10%);
+		box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
+	}
+
+	&_small {
+		padding: calc(#{$size} / 2) $size;
+		font-size: $font_s;
+	}
+
+	&_big {
+		font-size: $font_s;
+		line-height: $xs-line-height_h;
+
+		@include media-query(md) {
+			font-size: $line-height;
+			line-height: $line-height * 2;
+		}
+	}
+
+	&_solid {
+	    border: 3px solid $white;
+	    padding: $size - 3 #{$size / 2 + $size - 3};
+	    background: rgba(255, 255, 255, 0);
+	    box-shadow: none;
+
+	    &:hover {
+			background: rgba(255, 255, 255, 1);
+			box-shadow: none;
+		}
+
+		&:active {
+			background: mix(black, $white, 20%);
+		}
+
+		&:focus {
+			box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.6);
+		}
+	}
+
+	&_small#{&}_solid {
+		padding: calc(#{$size} / 2 - 3px) $size - 3;
+	}
+
+    &_colored#{&}_solid {
+        border-color: $positive;
+        color: $black;
+
+        &:hover {
+            background: $positive;
+            color: $white;
+        }
+
+        &:active {
+            background: mix(black, $positive, 20%);
+            border-color: mix(black, $positive, 20%);
+            color: $white;
+        }
+
+        &:focus {
+            box-shadow: 0 0 25px 0 rgba($positive, 0.6);
+        }
+    }
+
+    &_colored-light#{&}_solid {
+        color: $black;
+    }
+}

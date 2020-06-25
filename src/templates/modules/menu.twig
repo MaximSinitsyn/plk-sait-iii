@@ -1,0 +1,16 @@
+<div id="menu" class="menu">
+    <div class="menu__body-wrapper">
+        <ul class="menu__body">
+            {% for item in __scope.items %}
+                <li class="menu__item">
+                    <a class="menu__link" href="{{ item.link }}">
+                        {{ item.name }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="menu__button-wrapper">
+        <div class="menu__button"></div>
+    </div>
+</div>

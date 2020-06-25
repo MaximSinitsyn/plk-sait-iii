@@ -1,0 +1,59 @@
+{% if __mod != undefined %}
+    {% set btn_mod = "btn" ~ __mod %}
+    {% set input_mod = "form__input" ~ __mod %}
+{% else %}
+    {% set btn_mod = "btn_big" %}
+    {% set input_mod = "" %}
+{% endif %}
+
+<form action="" class="form {{ __class }}">
+    <div class="form__row form__row_alert">
+        <div class="form__alert">
+            Заполните все поля
+        </div>
+    </div>
+    <div class="form__row">
+        <input class="form__input {{ input_mod }} formClient" type="text" name="Name" placeholder="Ваше имя (*)" required>
+    </div>
+    <div class="form__row">
+        <input class="form__input {{ input_mod }} formEmail" type="text" name="Email" placeholder="Ваша почта (*)" required>
+    </div>
+    <div class="form__row">
+        <input class="form__input {{ input_mod }} phoneMask formPhone" type="text" name="Phone" placeholder="+7 (___)___-__-__">
+    </div>
+    <div class="form__row form__row_big-offset">
+
+            {% if __class == "formPhone" %}
+                <button class="form__btn btn {{ btn_mod }}" onclick="yaCounter48293603.reachGoal('call_modal'); return true;">
+                    {{ btn.phone }}
+                </button>
+            {% elseif __class == "formConsultation" %}
+                <button class="form__btn btn {{ btn_mod }}" onclick="yaCounter48293603.reachGoal('get_consultation_modal'); return true;">
+                    {{ btn.consultation }}
+                </button>
+            {% elseif __class == "formDefault" %}
+                <button class="form__btn btn {{ btn_mod }}" onclick="yaCounter48293603.reachGoal('get_license_modal'); return true;">
+                    {{ btn.default }}
+                </button>
+            {% else %}
+                <button class="form__btn btn {{ btn_mod }}" onclick="yaCounter48293603.reachGoal('get_license_modal'); return true;">
+                    {{ btn.default }}
+                </button>
+            {% endif %}
+
+    </div>
+    {#<div class="form__row">
+        <div class="form__policy">
+            <div class="form__policy-text">
+                Нажимая кнопку «Записаться», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных.
+            </div>
+            <label class="form__policy-label">
+                <span class="form__policy-caption">
+                    Я согласен(на)
+                </span>
+                <input class="form__policy-checkbox formAgree" type="checkbox" value="check" name="agree" checked="">
+            </label>
+        </div>
+    </div>#}
+    <input class="formName" style="display: none" value="{{ __formName }}" name="formName" disabled>
+</form>

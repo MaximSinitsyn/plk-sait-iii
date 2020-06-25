@@ -1,0 +1,24 @@
+{
+    "title": {
+        "data": "ЧТО ВЫ ПОЛУЧАЕТЕ В РЕЗУЛЬТАТЕ НАШЕЙ РАБОТЫ"
+    },
+    "items": {
+        "data": [
+            {
+                "img": "./images/5x@ez.jpeg",
+                "src": "./files/ez.pdf",
+                "title": "Экспертное заключение"
+            },
+            {
+                "img": "./images/5x@sez.jpeg",
+                "src": "./files/sez.pdf",
+                "title": "СЭЗ"
+            },
+            {
+                "img": "./images/5x@license.jpeg",
+                "src": "./files/license.pdf",
+                "title": "Лицензия"
+            }
+        ]
+    }
+}

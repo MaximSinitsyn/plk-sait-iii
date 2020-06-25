@@ -1,0 +1,27 @@
+.advantage {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+
+    &__img {
+        min-width: 70px;
+    }
+
+    &__content {
+        text-align: left;
+        margin-left: 20px;
+        color: #1a1a1a;
+    }
+
+    &__title {
+        font-size: 26px;
+        line-height: 26px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

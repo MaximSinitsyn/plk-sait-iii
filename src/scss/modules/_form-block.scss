@@ -1,0 +1,118 @@
+.form-block {
+    &__white {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 -#{$offset_s};
+        box-sizing: content-box;
+        padding: $offset_m $offset_s;
+
+        @include media-query(sm) {
+            margin: unset;
+            box-sizing: border-box;
+        }
+
+        @include media-query(lg) {
+            height: inherit;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 -#{$offset_s};
+        box-sizing: content-box;
+
+        @include media-query(sm) {
+            margin: unset;
+            box-sizing: border-box;
+        }
+
+        @include media-query(md) {
+            padding-right: 0;
+        }
+
+        @include media-query(lg) {
+            height: inherit;
+        }
+
+        &_form {
+            text-align: center;
+        }
+
+        &_consultation {
+            padding-top: $offset_m;
+            padding-bottom: $offset_m;
+        }
+    }
+
+    &__sale {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $positive;
+        font-size: $xs-title_s;
+        line-height: $xs-line-height_m;
+
+        @include media-query(md) {
+            font-size: $title_s;
+            line-height: $line-height_m;
+        }
+    }
+
+    &__period {
+        font-size: $font_h;
+        font-weight: 200;
+    }
+
+    &__form {
+        margin-top: $offset_l;
+    }
+
+    &__item {
+        height: inherit;
+        // flex-direction: column;
+    }
+
+    &__title{
+        color: $black;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: $xs-title_h;
+        line-height: $xs-line-height_h;
+
+        @include media-query(md) {
+            font-size: $title_h;
+            line-height: $line-height_h;
+        }
+
+        &_form {
+            color: $black;
+            font-size: $xs-title_m;
+            line-height: $xs-line-height_m;
+            margin-bottom: $offset_s;
+
+            @include media-query(md) {
+                font-size: $title_m;
+                line-height: $line-height_m;
+            }
+        }
+    }
+
+    &__description{
+        font-size: $font_m;
+        line-height: $line-height_m;
+        color: $black;
+        font-weight: 200;
+        margin: $offset_m 0 $offset_l;
+
+        @include media-query(md) {
+            font-size: $font_h;
+            line-height: $line-height_m;
+        }
+    }
+
+    &__btn {
+        display: flex;
+    }
+}

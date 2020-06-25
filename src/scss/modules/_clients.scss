@@ -1,0 +1,17 @@
+
+.clients {
+    &__row-title {
+        margin-bottom: $offset_l;
+    }
+
+    &__title {
+        line-height: $line-height_m;
+        font-size: $title_m;
+        text-transform: uppercase;
+    }
+
+    &__image {
+        max-width: 200px;
+        width: 100%;
+    }
+}

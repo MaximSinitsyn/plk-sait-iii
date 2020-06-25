@@ -1,0 +1,19 @@
+.advantages {
+    padding: 20px;
+
+    @include media-query(md) {
+        padding: $offset_l;
+    }
+
+    &__title {
+        margin-bottom: $offset_m;
+        line-height: $xs-line-height_m;
+        font-size: $xs-title_m;
+
+        @include media-query(md) {
+            margin-bottom: $offset_h;
+            line-height: $line-height_m;
+            font-size: $title_m;
+        }
+    }
+}

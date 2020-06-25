@@ -1,0 +1,35 @@
+
+@mixin image($file: false, $path: $_base_path) {
+    @if $file != false {
+        @include media-query(xs) {
+            background: url($path + '1x@' + $file);
+            @content;
+        }
+
+        @include media-query(sm) {
+            background: url($path + '2x@' + $file);
+            @content;
+        }
+
+        @include media-query(md) {
+            background: url($path + '3x@' + $file);
+            @content;
+        }
+
+        @include media-query(lg) {
+            background: url($path + '4x@' + $file);
+            @content;
+        }
+
+        @include media-query(hg) {
+            background: url($path + '5x@' + $file);
+            @content;
+        }
+    } @else {
+        &::after {
+            content: 'Не указан путь к файлу картинки';
+            color: red;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.sale-trigger {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+
+    &__title{
+        font-weight: bold;
+        font-size: $font_h;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: $font_s;
+        position: relative;
+        margin-top: $offset_s;
+        padding-top: $offset_s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            width: 40%;
+            left: 30%;
+            height: 1px;
+            background: $positive;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.block {
+    position: relative;
+
+    &_shadow {
+        box-shadow: 15px 15px 40px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+.block + .block {
+    margin-top: #{$size * 2};
+
+    @include media-query(md) {
+        margin-top: #{$size * 6};
+    }
+}

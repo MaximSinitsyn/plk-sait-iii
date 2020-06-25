@@ -1,0 +1,13 @@
+.whatItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__link + &__link {
+        margin-top: 22px;
+    }
+}

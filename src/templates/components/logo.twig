@@ -1,0 +1,27 @@
+{#
+
+Использование белого логотипа
+{%  include 'components/logo.twig' %}
+
+Использование цветного логотипа
+{%  include 'components/logo.twig' with {'__variable': 'colored'}  %}
+
+#}
+
+{% if  __variable == undefined %}
+    <img class="noScript logo"
+         src="./icon/logo-square.svg"
+         data-src-base="./icon/"
+         data-src=" <420:logo-square.svg,
+                    <780:logo-plc-without-slogan.svg,
+                    >781:logo-plc.svg" />
+{% endif %}
+
+{% if  __variable == 'colored' %}
+    <img class="noScript logo"
+         src="./icon/logo-square-colored.svg"
+         data-src-base="./icon/"
+         data-src=" <420:logo-square-colored.svg,
+                    <780:logo-plc-without-slogan-colored.svg,
+                    >781:logo-plc-colored.svg" />
+{% endif %}

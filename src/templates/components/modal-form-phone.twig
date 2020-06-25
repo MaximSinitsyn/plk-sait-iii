@@ -1,0 +1,11 @@
+<div id="formPhone" class="modal modalCloseOverlay">
+    <div class="modal__container">
+        <img class="modal__close" src="./icon/cancel.svg">
+        <div class="modal__head">
+            Заказать звонок
+        </div>
+        <div class="modal__body">
+            {% include "components/form.twig" with {"__class": "formPhone", "__mod": "_medium", "__formName": "Звонок"} %}
+        </div>
+    </div>
+</div>

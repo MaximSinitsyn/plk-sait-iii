@@ -1,0 +1,33 @@
+<div class="contact">
+    <div id="map" class="contact__map"></div>
+    <div class="row contact__row">
+        <div class="col xs-12 lg-5 lg-l-7 contact__block-wrapper">
+            <div class="contact__block white-block white-block_medium">
+                <div class="contact__title">
+                    {{ __scope.title }}
+                </div>
+                <div class="contact__items">
+                    {% for item in __scope.items %}
+                        <div class="contact__item">
+                            <div class="contact__icon-wrapper">
+                                <img class="contact__icon" src="{{ item.icon }}">
+                            </div>
+                            <div class="contact__text">
+                                <div class="contact__caption">
+                                    {{ item.title }}
+                                </div>
+                                <div class="contact__value">
+                                    {% if item.value != "__phone" %}
+                                        {{ item.value }}
+                                    {% else %}
+                                        {% include "components/phone.twig" with { "__variable": "light" } %}
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

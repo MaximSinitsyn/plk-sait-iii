@@ -1,0 +1,114 @@
+.offer {
+    //  &__image-wrapper {}
+
+    &__mobile-overlay {
+        background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.6) 70%);
+        width: 100%;
+        height: 150%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        @include media-query(hg) {
+            display: none;
+        }
+    }
+
+    &__row {
+        position: relative;
+
+        &_title {
+            margin-top: $offset_s;
+
+            @include media-query(md) {
+                margin-top: $offset_m;
+            }
+        }
+
+        &_description {
+            margin-top: 0;
+
+            @include media-query(md) {
+                margin-top: $offset_l;
+            }
+        }
+
+        &_btn {
+            margin-top: $offset_s;
+
+            @include media-query(md) {
+                margin-top: $offset_m;
+            }
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: unset;
+        right: -70%;
+        height: 80%;
+        bottom: -42px;
+
+        @include media-query(sm) {
+            right: -30%;
+            height: 100%;
+        }
+
+        @include media-query(md) {
+            left: unset;
+            right: -5%;
+            height: 110%;
+            bottom: -126px;
+        }
+    }
+
+    &__proposal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: $offset_m;
+
+        @include media-query(hg) {
+            margin-left: $size;
+            margin-top: 0;
+        }
+    }
+
+    &__discount {
+        color: $white;
+        font-size: $xs-title_m;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: $xs-line-height_m;
+
+        @include media-query(md) {
+            font-size: $title_m;
+            line-height: $line-height_m;
+        }
+
+        @include media-query(hg) {
+            color: $black;
+        }
+    }
+
+    &__period {
+        font-size: $font_h;
+        color: $white;
+        font-weight: 200;
+
+        @include media-query(hg) {
+            color: $black;
+        }
+    }
+
+    &__col {
+        &_btn {
+            flex-direction: column;
+            align-items: center;
+
+            @include media-query(hg) {
+                flex-direction: row;
+            }
+        }
+    }
+}

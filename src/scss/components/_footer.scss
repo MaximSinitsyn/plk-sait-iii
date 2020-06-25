@@ -1,0 +1,21 @@
+.footer {
+    padding: $offset_m 0;
+
+    &__logo-row {
+        margin-bottom: $offset_m;
+    }
+
+    // &__copyright-row {}
+
+    &__copyright {
+        color: $black;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    // &__copyright-line {}
+}

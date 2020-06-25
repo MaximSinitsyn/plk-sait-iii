@@ -1,0 +1,39 @@
+<div class="row row_static offer offer__row">
+    <div class="offer__image-wrapper">
+        {% include "utils/image.twig" with { "__scope": { "base": "./images/", "file": "offer.png"  }, "__class": "offer__image" } %}
+    </div>
+    <div class="offer__mobile-overlay"></div>
+    {% include "components/header.twig" %}
+    <div class="row offer__row offer__row_title">
+        <div class="col offer__col xs-12 hg-7 xs-center hg-start">
+            <div class="site-title">
+                <h1 class="site-title__caption">
+                    {{ __root.title | raw }}
+                </h1>
+                <div class="site-title__description">
+                    {{ __root.description | raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row offer__row offer__row_description xs-center hg-start">
+        <div class="col offer__col xs-12 lg-8 xs-center hg-start">
+            {% include "modules/offer_price.twig" with { "__scope": offer_price } %}
+        </div>
+    </div>
+    <div class="row offer__row offer__row_btn">
+        <div class="col offer__col offer__col_btn xs-12 hg-6 xs-center hg-start">
+            <button class="btn offer__btn" data-modal='{"name": "formDefault", "id": "form"}' onclick="yaCounter48293603.reachGoal('get_license'); return true;">
+                {{ btn.default }}
+            </button>
+            <div class="offer__proposal">
+                <span class="offer__discount">
+                    {{ __root.sale.title }}
+                </span>
+                <span class="offer__period">
+                    {{ __root.sale.text }}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

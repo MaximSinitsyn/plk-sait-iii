@@ -1,0 +1,61 @@
+/// @example html - Модификатор "_colored" делает весь блок цветным. По умолчанию весь текст белый
+///
+/// <a class="phone phone_colored" href="tel: {{ __root.phone.code }} {{ __root.phone.number }}">
+///    <span class="phone__text">
+///        <span class="phone__code">
+///         {{ __root.phone.code }}
+///     </span>
+///     <span class="phone__number">
+///         {{ __root.phone.number }}
+///     </span>
+///     </span>
+///     <span class="phone__caption">
+///         {{ __root.phone.caption }}
+///     </span>
+/// </a>
+
+.phone {
+    color: $white;
+    text-decoration: none;
+    font-size: $font_h;
+    font-weight: bold;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 0 30px #000;
+
+    // &__text {}
+
+    // &__code {}
+
+    // &__number {}
+    
+    &_colored {
+        color: $black;
+        text-shadow: none;
+    }
+
+    &_light {
+        text-shadow: none;
+    }
+
+    &_colored &__code {
+        color: mix(black, $light, 20%);
+    }
+
+    &__caption {
+        font-weight: 300;
+        font-size: $font_s;
+    }
+
+    &_colored &__caption,
+    &_light &__caption {
+        color: $light-dark;
+    }
+
+    &_light &__text {
+        color: $black;
+        font-size: $font_m;
+        font-weight: normal;
+    }
+}

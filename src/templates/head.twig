@@ -1,0 +1,15 @@
+<title>{{ __root.page_title }}</title>
+<meta name="description" content="{{ __root.description }}">
+
+<link rel="shortcut icon"
+      href="{{ __root.favicon.path }}{{ __root.favicon.iso }}">
+
+<link rel="icon"
+      type="image/png"
+      href="{{ __root.favicon.path }}{{ __root.favicon.png }}">
+
+{% for size in __root.favicon.ios %}
+    <link rel="apple-touch-icon"
+          sizes="{{ size }}x{{ size }}"
+          href="{{ __root.favicon.path }}fav_{{ size }}.png">
+{% endfor %}

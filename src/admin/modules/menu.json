@@ -1,0 +1,34 @@
+{
+    "items": {
+        "data": {
+            "home": {
+                "name": "Лицензия ИИИ",
+                "link": "#home"  
+            },
+            "garant": {
+                "name": "Преимущества",
+                "link": "#advantages"
+            },
+            "work": {
+                "name": "Виды работ",
+                "link": "#vidy_rabot"
+            },
+            "learning": {
+                "name": "Обучение специалистов",
+                "link": "#learning"  
+            },
+            "sez": {
+                "name": "Оформление СЭЗ",
+                "link": "#learning"  
+            },
+            "interactions": {
+                "name": "Порядок взаимодействия",
+                "link": "#process_raboty"
+            },
+            "contacts": {
+                "name": "Контакты",
+                "link": "#contacts"  
+            }
+        }
+    }
+}

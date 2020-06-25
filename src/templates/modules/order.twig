@@ -1,0 +1,16 @@
+<div class="order white-block white-block_clear">
+    <div class="order__row-wrapper row">
+        <div class="order__row-title row col xs-12 xs-center">
+            <h2 class="order__title">
+                {{ __scope.title }}
+            </h2>
+        </div>
+        <div class="order__row-content row xs-center">
+            {% for item in __scope.items %}
+                <div class="col xs-12 md-6 lg-4 xs-center">
+                    {% include "components/icon-trigger.twig" with {"__scope": item} %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

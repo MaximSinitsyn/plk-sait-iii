@@ -1,0 +1,40 @@
+.learning {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include media-query(md) {
+        padding: 18px;
+        border: 3px solid #a4a4a4;
+    }
+
+    @include media-query(hg) {
+        padding: 63px;
+    }
+
+    &__title {
+        margin-bottom: 21px;
+        padding-bottom: 21px;
+        line-height: $xs-line-height_m;
+        border-bottom: 1px dashed #a4a4a4;
+        font-size: $xs-title_m;
+
+        @include media-query(md) {
+            margin-bottom: 42px;
+            padding: 42px;
+            padding-top: 0;
+            line-height: $line-height_m;
+            font-size: $title_m;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+
+    &__btn {
+        margin-top: 32px;
+    }
+}

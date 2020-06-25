@@ -1,0 +1,85 @@
+{
+  "__root": {
+    "page_title": {
+      "data": "Лицензия Роспотребнадзора на источники ионизирующего излучения (ИИИ)",
+      "type": "text"
+    },
+    "title": {
+      "data": "Лицензия Роспотребнадзора на <b>источники ионизирующего излучения</b> (ИИИ)",
+      "type": "text"
+    },
+    "description": {
+      "data": "Поможем получить лицензию на источники ионизирующего излучения в России &#171;под ключ&#187;",
+      "type": "textbox"
+    },
+    "phone": {
+      "data": {
+        "code": "8 495",
+        "number": "150-70-26"
+      }
+    },
+    "sale": {
+      "data": {
+        "title": "СКИДКА 30%",
+        "text": "До конца месяца"
+      }
+    },
+    "favicon": {
+      "data": {
+        "path": "./favicon/",
+        "png": "fav_64.png",
+        "iso": "fav.ico",
+        "ios": ["57", "72", "114", "144", "180"]
+      },
+      "admin": false
+    }
+  },
+  "__modules": {
+    "btn": {
+      "json": "modules/btn.json"
+    },
+    "menu": {
+      "json": "modules/menu.json"
+    },
+    "offer_price": {
+      "json": "modules/offer_price.json"
+    },
+    "warranty": {
+      "json": "modules/warranty.json"
+    },
+    "advantages": {
+      "json": "modules/advantages.json"
+    },
+    "license": {
+      "json": "modules/license.json"
+    },
+    "learning": {
+      "json": "modules/learning.json"
+    },
+    "sez": {
+      "json": "modules/sez.json"
+    },
+    "order": {
+      "json": "modules/order.json"
+    },
+    "whatyouhave": {
+      "json": "modules/whatyouhave.json"
+    },
+    "clients": {
+      "json": "modules/clients.json"
+    },
+    "form_block": {
+      "json": "modules/form_block.json"
+    },
+    "contact": {
+      "json": "modules/contact.json"
+    }
+  },
+  "__scripts": [
+        {
+            "data": "<script type=\"text/javascript\" charset=\"utf-8\" src=\"https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab0528a40b4f99d8a2473fa31a3b6eecbdd833f8fd97d2e4395183e90a16c3a49&id=map\"></script>",
+            "type": "textarea",
+            "admin": "true"
+        }
+    ]
+}

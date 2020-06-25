@@ -1,0 +1,17 @@
+<div id="modalLicense" class="modal modalCloseOverlay">
+    <div class="modal__container">
+        <img class="modal__close" src="./icon/cancel.svg">
+        <div class="modal__head">
+            Виды лицензируемой деятельности ИИИ
+        </div>
+        <div class="modal__body">
+            <div class="license-modal">
+                {% for item in license.items %}
+                    <div class="license-modal__description">
+                        {{ item.description }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

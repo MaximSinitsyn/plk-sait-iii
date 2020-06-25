@@ -1,0 +1,18 @@
+<div class="clients row">
+    <div class="col xs-12">
+        <div class="white-block white-block_big">
+            <div class="clients__row-title">
+                <h2 class="clients__title col xs-12 xs-center">
+                    {{ __scope.title }}
+                </h2>
+            </div>
+            <div class="clients__row-content row xs-around">
+                {% for item in __scope.items %}
+                    <div class="col xs-12 sm-6 md-4 xs-center xs-middle">
+                        {% include "utils/image.twig" with { "__scope": item, "__class": "clients__image" } %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

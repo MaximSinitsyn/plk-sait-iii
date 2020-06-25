@@ -1,0 +1,142 @@
+.license {
+    padding: $offset_s;
+
+    @include media-query(lg) {
+        position: relative;
+        height: 768px;
+        padding: $offset_h 0;
+    }
+
+    &__image-wrapper {
+        margin-bottom: $offset_m;
+
+        @include media-query(lg) {
+            position: absolute;
+            left: $offset_s;
+            top: 0;
+            height: 100%;
+            width: auto;
+            margin: unset;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+
+        @include media-query(lg) {
+            width: auto;
+            height: 100%;
+            padding: 20px;
+        }
+    }
+
+    &__text-block-wrapper {
+        height: 100%;
+        display: flex;
+
+        @include media-query(lg) {
+            padding-left: 579px;
+            margin: 0 $offset_s;
+        }
+    }
+
+    &__text-block {
+        padding: $offset_m;
+
+        @include media-query(lg) {
+            padding: $offset_l;
+            margin-left: -#{$offset_l};
+            width: calc(100% + #{$offset_l});
+            height: 100%;
+        }
+    }
+
+    &__title{
+        font-size: $xs-title_m;
+        line-height: $xs-line-height_m;
+        text-transform: uppercase;
+        padding-bottom: #{$size - 1};
+        margin-bottom: $offset_s;
+        border-bottom: 1px dashed $light;
+
+        @include media-query(lg) {
+            font-size: $title_s;
+            line-height: $line-height_m;
+        }
+
+        @include media-query(hg) {
+            font-size: $title_m;
+            line-height: $line-height_m;
+        }
+    }
+
+    &__list {
+        max-height: 400px;
+        overflow: hidden;
+        box-sizing: content-box;
+        padding-bottom: calc(10% - #{$offset_m});
+
+        @include media-query(lg) {
+            max-height: calc(58%);
+        }
+
+        @include media-query(hg) {
+            max-height: calc(60%);
+        }
+    }
+
+    &__description {
+        font-size: $font_s;
+        font-weight: 300;
+        line-height: $line-height;
+        border-left: 5px solid $positive;
+        padding-left: $size;
+
+        @include media-query(sm) {
+            font-size: $font_l;
+        }
+    }
+
+    &__description + &__description {
+        margin-top: $offset_s;
+    }
+
+    &__component {
+        font-size: $font_h;
+        line-height: $line-height;
+        padding-top: $offset_s;
+        box-shadow: 0 -21px 15px -10px white;
+        position: relative;
+    }
+
+    &__link {
+        border-bottom: 1px dashed $black;
+        color: $black;
+        transition: 300ms 0ms linear;
+
+        &:hover {
+            color: $positive;
+            border-color: $positive;
+        }
+    }        
+}
+
+.license-modal {
+    &__description {
+        font-size: $font_s;
+        font-weight: 300;
+        line-height: $line-height;
+        border-left: 5px solid $positive;
+        padding-left: $size;
+
+        @include media-query(md) {
+            font-size: $font_l;
+        }
+    }
+
+    &__description + &__description {
+        margin-top: $offset_s;
+    }
+}

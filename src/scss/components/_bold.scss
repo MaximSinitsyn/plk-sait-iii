@@ -1,0 +1,15 @@
+/// Класс выделения жирным .bold по умолчанию черного цвета
+/// Модификатор _balanced и _light изменяют цвет
+
+.bold {
+    color: $black;
+    font-weight: bold;
+
+    &_balanced {
+        color: $balanced;
+    }
+
+    &_light {
+        color: $white;
+    }
+}

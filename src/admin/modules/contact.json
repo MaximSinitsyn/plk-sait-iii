@@ -1,0 +1,29 @@
+{
+    "title": {
+        "data": "Контакты"
+    },
+    "items": {
+        "data": [
+            {
+                "title": "Время работы:",
+                "value": "Пн-Пт с 09:00 до 20:00",
+                "icon": "./icon/clock.svg"
+            },
+            {
+                "title": "Телефон:",
+                "value": "__phone",
+                "icon": "./icon/phone.svg"
+            },
+            {
+                "title": "Почта:",
+                "value": "info@profline-consult.ru",
+                "icon": "./icon/envelope.svg"
+            },
+            {
+                "title": "Адрес:",
+                "value": "ул. Архитектора Власова, 49",
+                "icon": "./icon/marker.svg"
+            }
+        ]
+    }
+}

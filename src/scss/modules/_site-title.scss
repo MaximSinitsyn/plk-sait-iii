@@ -1,0 +1,33 @@
+.site-title {
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    width: 100%;
+
+    @include media-query(hg) {
+        color: $black;
+    }
+
+    // &__caption {}
+
+    &__description {
+        margin-top: 22px;
+        border-top: 1px dashed $white;
+        padding-top: 21px;
+        font-size: $font_m;
+        // margin-right: 20%;
+        // margin-left: 20%;
+        font-weight: 100;
+
+        @include media-query(sm) {
+            font-size: $font_h;
+        }
+
+        @include media-query(hg) {
+            margin-right: 20%;
+            margin-left: 0;
+            color: #646464;
+            border-top: 1px dashed #cdcdcd;
+        }
+    }
+}

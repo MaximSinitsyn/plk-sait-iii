@@ -1,0 +1,19 @@
+.order {
+    padding: $offset_l 0;
+
+    // &__row-title {}
+    // &__row-wrapper {}
+    // &__row-content {}
+
+    &__title {
+        margin-bottom: $offset_m;
+        line-height: $xs-line-height_m;
+        font-size: $xs-title_m;
+
+        @include media-query(md) {
+            margin-bottom: $offset_h;
+            line-height: $line-height_m;
+            font-size: $title_m;
+        }
+    }
+}

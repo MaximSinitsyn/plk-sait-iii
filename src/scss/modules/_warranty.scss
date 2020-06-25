@@ -1,0 +1,24 @@
+.warranty {
+    //  &__item {}
+    //  &__item-title {}
+    //  &__item-text {}
+
+    &__title {
+        font-size: $xs-title_h;
+        line-height: $xs-line-height_h;
+        color: $white;
+        font-weight: 200;
+        margin-bottom: $offset_s;
+        text-align: center;
+
+        @include media-query(md) {
+            font-size: $title_h;
+            line-height: $line-height_h;
+            margin-bottom: $offset_l;
+        }
+
+        @include media-query(lg) {
+            text-align: left;
+        }
+    }
+}

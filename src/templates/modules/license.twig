@@ -1,0 +1,25 @@
+<div class="row license">
+    <div class="license__image-wrapper white-block white-block_clear">
+        {% include "utils/image.twig" with { "__scope": __scope.image, "__class": "license__image" } %}
+    </div>
+
+    <div class="license__text-block-wrapper white-block white-block_clear">
+        <div class="license__text-block white-block white-block_transparent white-block_medium xs-center lg-start">
+            <div class="license__title">
+                {{ __scope.title | raw }}
+            </div>
+            <div class="license__list">
+                {% for item in __scope.items %}
+                    <div class="license__description xs-start">
+                        {{ item.description }}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="license__component" >
+                <a class="license__link" href="" data-modal='{"name": "modalLicense", "id": "modal"}'>
+                    {{ __scope.link.name }}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

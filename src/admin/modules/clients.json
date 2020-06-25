@@ -1,0 +1,39 @@
+{
+    "title": {
+        "data": "Наши клиенты"
+    },
+    "items": {
+        "data": [
+            {
+                "base": "./images/clients/",
+                "file": "asteros.jpg",
+                "alt": "Астерос"
+            },
+            {
+                "base": "./images/clients/",
+                "file": "atol.jpg",
+                "alt": "Атол"
+            },
+            {
+                "base": "./images/clients/",
+                "file": "honeywell.jpg",
+                "alt": "Honeywell"
+            },
+            {
+                "base": "./images/clients/",
+                "file": "kabest.jpg",
+                "alt": "Кабест"
+            },
+            {
+                "base": "./images/clients/",
+                "file": "krok.jpg",
+                "alt": "Крок"
+            },
+            {
+                "base": "./images/clients/",
+                "file": "land.jpg",
+                "alt": "Ландшафт сити"
+            }
+        ]
+    }
+}

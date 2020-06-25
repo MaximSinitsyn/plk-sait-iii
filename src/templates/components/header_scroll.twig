@@ -1,0 +1,22 @@
+<div id="header_scroll" class="header header_scroll">
+    <div class="row header__container">
+        <div class="col xs-2 header__left">
+            {% include "components/logo.twig" with {"__variable": "colored"} %}
+        </div>
+        <div class="col xs-10 xs-end xs-middle header__right">
+            <div class="header__phone">
+                {% include "components/phone.twig" with {"__variable": "colored"} %}
+            </div>
+            <div class="header__btn xs-off md" data-modal='{"name": "formPhone", "id": "form"}'>
+                <button class="btn btn_small btn_solid btn_colored" onclick="yaCounter48293603.reachGoal('call'); return true;">
+                    {{ btn.phone }}
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row header__menu">
+        <div class="header__menu-inner">
+            {% include "modules/menu.twig" with {"__scope": menu} %}
+        </div>
+    </div>
+</div>

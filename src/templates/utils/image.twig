@@ -1,0 +1,40 @@
+{% if __scope.base and __scope.file %}
+
+    <img class="{{ __class }}"
+
+         {% if __scope.alt %}
+             alt="{{ __scope.alt }}"
+         {% endif %}
+
+         src="{{ __scope.base }}1x@{{ __scope.file }}"
+         data-src-base="{{ __scope.base }}"
+         data-src=" <768:2x@{{ __scope.file }},
+                    <960:3x@{{ __scope.file }},
+                    <1200:4x@{{ __scope.file }},
+                    >1200:5x@{{ __scope.file }}" />
+
+            <!-- <480:1x@{{ __scope.file }}, -->
+
+    <noscript>
+        <img {% if __class %}
+                class="noScript {{ __class }}"
+             {% else %}
+                 class="noScript"
+             {% endif %}
+
+             {% if __scope.alt %}
+                alt="{{ __scope.alt }}"
+             {% endif %}
+
+             src="{{ __scope.base }}4x@{{ __scope.file }}" />
+    </noscript>
+
+{% elseif __scope.base %}
+
+    <h2 style="color: red">Отсутствует расширение файла в конфигурации модуля</h2>
+
+{% elseif __scope.file %}
+
+    <h2 style="color: red">Отсутствует путь к файлу в конфигурации модуля</h2>
+
+{% endif %}

@@ -1,0 +1,26 @@
+.sale {
+    display: flex;
+    flex-direction: column;
+    color: $black;
+
+    &__title {
+        font-size: $xs-title_m;
+
+        @include media-query(md) {
+            font-size: $title_m;
+        }
+    }
+
+    &__period {
+        font-size: $font_s;
+
+        @include media-query(md) {
+            font-size: $font_h;
+            margin-top: $offset_s;
+        }
+    }
+
+    &__btn {
+        margin-top: $offset_m;
+    }
+}

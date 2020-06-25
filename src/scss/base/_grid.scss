@@ -1,0 +1,398 @@
+// Flex Box grid
+
+.col {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    padding: calc(#{$size} / 2);
+}
+
+.row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: $max-width;
+    padding: calc(#{$size} / 2) calc(#{$size} / 2);
+    margin: 0 auto;
+
+    & & {
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        width: 100%;
+
+        &_offset {
+            padding: calc(#{$size} / 2);
+            margin: calc(-#{$size} / 2);
+            box-sizing: content-box;
+            z-index: 1;
+        }
+    }
+
+    &_offset + & {
+        margin-top: #{$size};
+    }
+
+    &_offset + &_offset {
+        margin-top: calc(#{$size} / 2);
+    }
+
+    &_clear {
+        padding: 0 calc(#{$size} / 2);
+    }
+
+    &_clear-full {
+        padding: 0 calc(#{$size} / 2);
+
+        > .col {
+            padding: 0 calc(#{$size} / 2);
+        }
+    }
+
+    &_reverse,
+    & &_reverse {
+        flex-direction: row-reverse;
+    }
+
+    &_static {
+        position: relative;
+    }
+}
+
+.xs {
+    display: flex;
+
+    @for $i from 0 through 12 {
+        &-#{$i} {
+            display: flex;
+            flex-basis: 100 / 12 * $i#{"%"};
+            max-width: 100 / 12 * $i#{"%"};
+        }
+    }
+
+    @for $i from 0 through 12 {
+        &-l-#{$i} {
+            margin-left: 100 / 12 * $i#{"%"};
+        }
+    }
+
+    &-off {
+        display: none;
+    }
+
+    &-start {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    &-center {
+        justify-content: center;
+        text-align: center;
+    }
+
+    &-end {
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    &-top {
+        align-items: flex-start;
+    }
+
+    &-middle {
+        align-items: center;
+    }
+
+    &-bottom {
+        align-items: flex-end;
+    }
+
+    &-around {
+        justify-content: space-around;
+    }
+
+    &-between {
+        justify-content: space-between;
+    }
+
+    &-first {
+        order: -1;
+    }
+
+    &-last {
+        order: 1;
+    }
+}
+
+@include media-query(sm) {
+    .sm {
+        display: flex;
+
+        @for $i from 0 through 12 {
+            &-#{$i} {
+                display: flex;
+                flex-basis: 100 / 12 * $i#{"%"};
+                max-width: 100 / 12 * $i#{"%"};
+            }
+        }
+
+        @for $i from 0 through 12 {
+            &-l-#{$i} {
+                margin-left: 100 / 12 * $i#{"%"};
+            }
+        }
+
+        &-off {
+            display: none;
+        }
+
+        &-start {
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+        &-center {
+            justify-content: center;
+            text-align: center;
+        }
+
+        &-end {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        &-top {
+            align-items: flex-start;
+        }
+
+        &-middle {
+            align-items: center;
+        }
+
+        &-bottom {
+            align-items: flex-end;
+        }
+
+        &-around {
+            justify-content: space-around;
+        }
+
+        &-between {
+            justify-content: space-between;
+        }
+
+        &-first {
+            order: -1;
+        }
+
+        &-last {
+            order: 1;
+        }
+    }
+}
+
+@include media-query(md) {
+    .md {
+        display: flex;
+
+        @for $i from 0 through 12 {
+            &-#{$i} {
+                display: flex;
+                flex-basis: 100 / 12 * $i#{"%"};
+                max-width: 100 / 12 * $i#{"%"};
+            }
+        }
+
+        @for $i from 0 through 12 {
+            &-l-#{$i} {
+                margin-left: 100 / 12 * $i#{"%"};
+            }
+        }
+
+        &-off {
+            display: none;
+        }
+
+        &-start {
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+        &-center {
+            justify-content: center;
+            text-align: center;
+        }
+
+        &-end {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        &-top {
+            align-items: flex-start;
+        }
+
+        &-middle {
+            align-items: center;
+        }
+
+        &-bottom {
+            align-items: flex-end;
+        }
+
+        &-around {
+            justify-content: space-around;
+        }
+
+        &-between {
+            justify-content: space-between;
+        }
+
+        &-first {
+            order: -1;
+        }
+
+        &-last {
+            order: 1;
+        }
+    }
+}
+
+@include media-query(lg) {
+    .lg {
+        display: flex;
+
+        @for $i from 0 through 12 {
+            &-#{$i} {
+                display: flex;
+                flex-basis: 100 / 12 * $i#{"%"};
+                max-width: 100 / 12 * $i#{"%"};
+            }
+        }
+
+        @for $i from 0 through 12 {
+            &-l-#{$i} {
+                margin-left: 100 / 12 * $i#{"%"};
+            }
+        }
+
+        &-off {
+            display: none;
+        }
+
+        &-start {
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+        &-center {
+            justify-content: center;
+            text-align: center;
+        }
+
+        &-end {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        &-top {
+            align-items: flex-start;
+        }
+
+        &-middle {
+            align-items: center;
+        }
+
+        &-bottom {
+            align-items: flex-end;
+        }
+
+        &-around {
+            justify-content: space-around;
+        }
+
+        &-between {
+            justify-content: space-between;
+        }
+
+        &-first {
+            order: -1;
+        }
+
+        &-last {
+            order: 1;
+        }
+    }
+}
+
+@include media-query(hg) {
+    .hg {
+        display: flex;
+
+        @for $i from 0 through 12 {
+            &-#{$i} {
+                display: flex;
+                flex-basis: 100 / 12 * $i#{"%"};
+                max-width: 100 / 12 * $i#{"%"};
+            }
+        }
+
+        @for $i from 0 through 12 {
+            &-l-#{$i} {
+                margin-left: 100 / 12 * $i#{"%"};
+            }
+        }
+
+        &-off {
+            display: none;
+        }
+
+        &-start {
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+        &-center {
+            justify-content: center;
+            text-align: center;
+        }
+
+        &-end {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        &-top {
+            align-items: flex-start;
+        }
+
+        &-middle {
+            align-items: center;
+        }
+
+        &-bottom {
+            align-items: flex-end;
+        }
+
+        &-around {
+            justify-content: space-around;
+        }
+
+        &-between {
+            justify-content: space-between;
+        }
+
+        &-first {
+            order: -1;
+        }
+
+        &-last {
+            order: 1;
+        }
+    }
+}

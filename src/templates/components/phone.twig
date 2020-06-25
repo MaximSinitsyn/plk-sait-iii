@@ -1,0 +1,18 @@
+{% if __variable == "colored" %}
+	{% set __mod = "phone_colored" %}
+{% endif %}
+
+{% if __variable == "light" %}
+	{% set __mod = "phone_light" %}
+{% endif %}
+
+<a class="phone {{ __mod }}" href="tel: {{ __root.phone.code }} {{ __root.phone.number }}">
+	<span class="phone__text">
+		<span class="phone__code">
+			{{ __root.phone.code }}
+		</span>
+		<span class="phone__number">
+			{{ __root.phone.number }}
+		</span>
+	</span>
+</a>
