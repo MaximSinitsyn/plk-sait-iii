@@ -56,9 +56,6 @@
     "learning": {
       "json": "modules/learning.json"
     },
-    "sez": {
-      "json": "modules/sez.json"
-    },
     "order": {
       "json": "modules/order.json"
     },
