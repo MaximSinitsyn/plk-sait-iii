@@ -1,0 +1,64 @@
+{
+  "name": "PLK_Minkult",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/y_projects/plk_minkult.git"
+  },
+  "keywords": [
+    "plk_minkult"
+  ],
+  "author": "Alexey Bychkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/y_projects/plk_minkult/issues"
+  },
+  "homepage": "https://gitlab.com/y_projects/plk_minkult#README",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browserify": "^16.1.0",
+    "buffer": "^5.1.0",
+    "del": "^3.0.0",
+    "eslint": "^4.15.0",
+    "gulp": "github:gulpjs/gulp",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.2",
+    "gulp-file-include": "^2.0.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-remember": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-responsive": "^2.9.0",
+    "gulp-rev": "^8.1.1",
+    "gulp-rev-replace": "^0.4.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^6.0.0",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-svg2png": "^2.0.2",
+    "gulp-to-ico": "^1.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulplog": "^1.0.0",
+    "rename": "^1.0.4",
+    "source": "0.0.3",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-ftp": "^0.6.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

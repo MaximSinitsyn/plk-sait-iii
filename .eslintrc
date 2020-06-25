@@ -1,0 +1,11 @@
+{
+    "parser": "babel-eslint",
+    "rules": {
+      "camelcase": [
+        "error",
+        {
+          "properties": "always"
+        }
+      ]
+    }
+  }
